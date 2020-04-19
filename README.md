@@ -3,7 +3,7 @@
 
 A Scala project to take full size screenshot of a webpage in different dimensions.
 
-This project was build as a demo for the post ["A Scala script to take full size webpage sreenshots for different screen dimensions"] that I published on my [personal blog].
+This project was build as a demo for the post ["A Scala script to take full size webpage screenshots for different screen dimensions"] that I published on my [personal blog].
 You can always refer to the post if you want to find more information about this project. 
 
 ## Requirements
@@ -44,7 +44,7 @@ This project is licensed under the terms of the MIT license. See the [LICENSE] f
 * [Email]
 
 
-["A Scala script to take full size webpage sreenshots for different screen dimensions"]: https://diamantidis.github.io/2020/04/19/scala-script-for-fullsize-screenshots-for-different-screen-dimensions
+["A Scala script to take full size webpage screenshots for different screen dimensions"]: https://diamantidis.github.io/2020/04/19/scala-script-for-fullsize-screenshots-for-different-screen-dimensions
 [personal blog]: https://diamantidis.github.io/
 [Scala]: https://www.scala-lang.org/
 [sbt]: https://www.scala-sbt.org/
