@@ -3,6 +3,7 @@ import java.util.Calendar
 import org.apache.commons.io.FileUtils
 import org.openqa.selenium.{Dimension, OutputType}
 import org.openqa.selenium.chrome.{ChromeDriver, ChromeOptions}
+import utils.Helpers
 
 object Main extends App {
 
@@ -15,7 +16,9 @@ object Main extends App {
   )
 
   val Host = "https://diamantidis.github.io"
-  val url = s"${Host}/2020/04/19/scala-script-for-fullsize-screenshots-for-different-screen-dimensions"
+
+  val url =
+    s"${Host}/2020/04/19/scala-script-for-fullsize-screenshots-for-different-screen-dimensions"
 
   // Setup webdriver
   val options = new ChromeOptions()
@@ -32,12 +35,7 @@ object Main extends App {
   val directory = s"$baseDir/$year-$month-$day"
 
   // Compute the name of the file
-  val filename = url.replace(Host, "")
-    .toLowerCase()
-    .replaceAll("^/+", "") // trim leading '/'
-    .replaceAll("/+$", "") // trim trailing '/'
-    .replaceAll("/", "-") // replace '/' with '-'
-    .replaceAll("^$", "homepage") // if it's empty string, then it's the home page
+  val filename = Helpers.getFilename(url, Host)
 
   webDriver.get(url)
   Thread.sleep(500)

@@ -31,7 +31,10 @@ You can always refer to the post if you want to find more information about this
     ```shell script
     sbt run
     ```
-
+* Execute the tests
+    ```shell script
+    sbt clean test
+    ```
 
 ## License
 
