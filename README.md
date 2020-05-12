@@ -31,9 +31,13 @@ You can always refer to the post if you want to find more information about this
     ```shell script
     sbt run
     ```
-* Execute the tests
+* Run tests
     ```shell script
     sbt clean test
+    ```
+* Run tests with coverage
+    ```
+    sbt clean coverage test coverageReport
     ```
 
 ## License
