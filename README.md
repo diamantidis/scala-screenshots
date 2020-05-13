@@ -36,8 +36,12 @@ You can always refer to the post if you want to find more information about this
     sbt clean test
     ```
 * Run tests with coverage
-    ```
+    ```shell script
     sbt clean coverage test coverageReport
+    ```
+* Run `scalafmt` task
+    ```shell script
+    sbt scalafmtAll
     ```
 
 ## License
