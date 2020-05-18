@@ -1,7 +1,5 @@
 # Screenshots
 
----
-
 ![Scala CI](https://github.com/diamantidis/scala-screenshots/workflows/Scala%20CI/badge.svg)
 [![codecov](https://codecov.io/gh/diamantidis/scala-screenshots/branch/develop/graph/badge.svg)](https://codecov.io/gh/diamantidis/scala-screenshots)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
