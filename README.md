@@ -13,7 +13,7 @@ You can always refer to the post if you want to find more information about this
 
 ## Requirements
 * [Scala] (2.13.1)
-* [sbt] (1.3.9)
+* [sbt] (1.3.10)
 * [ChromeDriver] (81.0.4044.69)
  
 ## How to run from the command line
