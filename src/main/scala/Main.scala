@@ -20,6 +20,8 @@ object Main extends App {
   val url =
     s"${Host}/2020/04/19/scala-script-for-fullsize-screenshots-for-different-screen-dimensions"
 
+  System.setProperty("webdriver.chrome.driver", "resources/chromedriver");
+
   // Setup webdriver
   val options = new ChromeOptions()
   options.addArguments("headless")
