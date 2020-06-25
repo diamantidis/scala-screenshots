@@ -3,7 +3,7 @@ import java.util.Calendar
 import org.apache.commons.io.FileUtils
 import org.openqa.selenium.{Dimension, OutputType}
 import org.openqa.selenium.chrome.{ChromeDriver, ChromeOptions}
-import utils.Helpers
+import utils.{DriverManager, Helpers}
 
 object Main extends App {
 
@@ -19,6 +19,15 @@ object Main extends App {
 
   val url =
     s"${Host}/2020/04/19/scala-script-for-fullsize-screenshots-for-different-screen-dimensions"
+
+  val jarPath = getClass
+    .getProtectionDomain()
+    .getCodeSource()
+    .getLocation()
+    .toURI()
+    .getPath()
+  val chromedriverDir = DriverManager.chromedriverDir(new File(jarPath))
+  System.setProperty("webdriver.chrome.driver", chromedriverDir);
 
   // Setup webdriver
   val options = new ChromeOptions()
