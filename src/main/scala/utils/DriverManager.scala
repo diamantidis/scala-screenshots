@@ -15,17 +15,9 @@ object DriverManager {
       .listFiles(new FilenameFilter {
         def accept(dir: File, name: String) = name.equals("resources")
       })
-      .map { list =>
-        print(list)
-        list
-      }
       .flatMap(_.listFiles(new FilenameFilter {
         def accept(dir: File, name: String) = name.equals("chromedriver")
       }))
-      .map { list =>
-        print(list)
-        list
-      }
       .isEmpty
 
     val chromedriverPath = jarRootDir + "/resources/chromedriver"
