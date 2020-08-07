@@ -10,7 +10,7 @@ version := "1.0"
 libraryDependencies += "org.seleniumhq.selenium" % "selenium-java"            % "3.141.59"
 libraryDependencies += "commons-io"              % "commons-io"               % "2.7"
 libraryDependencies += "org.scala-lang.modules" %% "scala-parser-combinators" % "1.1.2"
-libraryDependencies += "org.scalatest"          %% "scalatest"                % "3.2.0" % Test
+libraryDependencies += "org.scalatest"          %% "scalatest"                % "3.2.1" % Test
 libraryDependencies += "org.scalamock"          %% "scalamock"                % "5.0.0" % Test
 
 enablePlugins(JavaAppPackaging)
