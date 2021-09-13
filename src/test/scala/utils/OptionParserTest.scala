@@ -3,6 +3,7 @@ package utils
 import org.scalatest.funsuite.AnyFunSuite
 
 class OptionParserTest extends AnyFunSuite {
+
   test("parse options") {
     val optionParser = new OptionParser.Live {}
 

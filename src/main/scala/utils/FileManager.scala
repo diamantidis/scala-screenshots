@@ -56,7 +56,7 @@ object FileManager {
         resultMap
       } match {
         case Success(value: Some[Map[String, Any]]) => Right(value.get)
-        case _                                      => Left(FileManagerFailure.InvalidFormat)
+        case _ => Left(FileManagerFailure.InvalidFormat)
       }
 
       result

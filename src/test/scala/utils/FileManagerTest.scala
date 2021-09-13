@@ -7,6 +7,7 @@ import org.scalamock.scalatest.MockFactory
 class NoArgsFile() extends File("somePath") {}
 
 class FileManagerTest extends AnyFunSuite with MockFactory {
+
   test("should return a map for a file with valid JSON format") {
     val fileManager = new FileManager.Live {}
 
