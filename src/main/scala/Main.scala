@@ -21,6 +21,7 @@ object Main extends App {
       extends ConfigMapper.Live
       with OptionParser.Live
       with FileManager.Live {}
+
   val universe = Universe()
 
   val optionParams = universe.getOptionParser.parse(args) match {
@@ -61,7 +62,7 @@ object Main extends App {
   val urls = config.urls
 
   val url =
-    s"${host}/${urls.head}"
+    s"$host/${urls.head}"
 
   val jarPath = getClass
     .getProtectionDomain()
@@ -69,6 +70,7 @@ object Main extends App {
     .getLocation()
     .toURI()
     .getPath()
+
   val chromedriverDir = DriverManager.chromedriverDir(new File(jarPath))
   System.setProperty("webdriver.chrome.driver", chromedriverDir)
 
