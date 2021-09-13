@@ -5,6 +5,7 @@ import org.scalatest.EitherValues
 import models.{Config, ScreenDimension}
 
 class ConfigMapperTest extends AnyFunSuite {
+
   test("parse with valid data should return a config model") {
     val configMapper = new ConfigMapper.Live {}
 
