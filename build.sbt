@@ -1,6 +1,6 @@
 import com.typesafe.sbt.SbtNativePackager.Universal
 
-scalaVersion := "2.13.6"
+scalaVersion := "2.13.12"
 
 name := "scala-screenshots"
 organization := "io.github.diamantidis"
